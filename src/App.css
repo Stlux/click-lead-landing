@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes mclaren-blink {
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+  45%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
   }
 }
+:root{
+  --bg-main: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(186,193,193,0.15) 31%, rgba(186,193,196,0.15) 100%);
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav a{
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(28, 33, 37, 0.5);
+}
+
+b{
+  font-weight: 700 !important;
+}
+
+.navbar{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.navbar-brand img{
+  max-width: 144px;
+}
+
+.lang-changer a{
+  font-weight: 700;
+  color: #FF010B;
+}
+
+.header-login-link{
+  color: black;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.header-login-link:hover{
+  color: #FF010B;
+}
+
+.header-signup, .btn-reversed, .btn{
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 30px;
+  color: #FFFFFF;
+  display: inline-block;
+  background: #1C2125;
+  border-radius: 100px;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  transition: 0.3s;
+}
+
+.header-signup:hover, .btn-reversed:hover{
+  background: #FF010B;
+}
+
+.btn{
+  background: #FF010B;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover{
+  background: #1C2125;
+  color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.top-box-title{
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: bold;
+  color: rgb(28 33 37 / 75%);
+  margin: 0 0 5px;
+}
+
+body{
+  background: var(--bg-main);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1, p, body *{
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.nav-links-list{
+  list-style-type: none;
+}
+
+.nav-links{
+  position: relative;
+  top: -20px;
+}
+
+.nav-links > *{
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nav-links-list li{
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.top-box-title span{
+  font-size: 64px;
+  line-height: 73px;
+}
+
+.top-box-desc{
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  color: #1C2125;
+}
+
+.top-box-desc b{
+  color: #FF010B;
+  white-space: nowrap;
+}
+
+.top-box-btn{
+  width: 223px;
+}
+.top-box-title span{
+  font-size: 64px;
+  line-height: 73px;
+}
+
+.top-box-desc{
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  margin: 30px 0px;
+  color: #1C2125;
+}
+
+.top-box-desc b{
+  color: #FF010B;
+  white-space: nowrap;
+}
+
+.top-box .btn{
+  width: 223px;
+}
+
+.mclaren-box{
+  position: relative;
+  left: -100px;
+}
+
+.mc-laren{
+  position: absolute;
+}
+
+.mc-laren-lights{
+  position: absolute;
+  animation-name: mclaren-blink;
+  animation-duration: 3s;
+  animation: mclaren-blink 1.5s linear 0s infinite alternate;
+}
+
+@media (min-width: 1100px){
+  .container {
+      max-width: 1094px;
   }
 }
