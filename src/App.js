@@ -6,6 +6,7 @@ import VideoBox from './components/video-box';
 import HistoryBox from './components/history-box';
 import ExperienceBox from './components/experience-box';
 import ProgramBox from './components/program-box';
+import Confabox from './components/confa-box';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <HistoryBox />
       <ExperienceBox />
       <ProgramBox />
+      <Confabox />
     </div>
   );
 }
