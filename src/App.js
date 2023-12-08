@@ -7,6 +7,8 @@ import HistoryBox from './components/history-box';
 import ExperienceBox from './components/experience-box';
 import ProgramBox from './components/program-box';
 import Confabox from './components/confa-box';
+import SearchBox from './components/search-box';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <ExperienceBox />
       <ProgramBox />
       <Confabox />
+      <SearchBox />
+      <Footer />
     </div>
   );
 }

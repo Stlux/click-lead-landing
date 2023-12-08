@@ -86,7 +86,7 @@ export default function Confabox(){
 
                     <center>
                         <ul className="slider-dots">
-                            {sliderDots}}
+                            {sliderDots}
                         </ul>
                     </center>
                 </div>
