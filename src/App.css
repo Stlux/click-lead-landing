@@ -27,6 +27,10 @@
   --bg-main: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(186,193,193,0.15) 31%, rgba(186,193,196,0.15) 100%);
 }
 
+img{
+  width: 100% !important;
+}
+
 nav a{
   font-weight: 500;
   font-size: 14px;
@@ -194,6 +198,39 @@ h1, p, body *{
   animation-name: mclaren-blink;
   animation-duration: 3s;
   animation: mclaren-blink 1.5s linear 0s infinite alternate;
+}
+
+@media screen and (min-width: 1240px) {
+  .mc-laren, .mc-laren-lights{
+    width: 800px !important;
+  } 
+}
+
+@media screen and (max-width: 1240px){
+  .mc-laren, .mc-laren-lights{
+    width: 115% !important;
+  } 
+
+  .mclaren-box{
+    left: -60px;
+    top: 60px;
+  }
+
+  .top-box-title{
+    font-size: 42px;
+  }
+
+  .top-box-title span{
+    font-size: 60px;
+  }
+
+  .top-box-desc {
+    font-size: 20px;
+  }
+  
+  .video-bx{
+    margin-top: 100px !important;
+  }
 }
 
 .video-bx{
@@ -674,10 +711,255 @@ h3{
 .social li {
   margin: 0 35px;
   transition: all 0.5s ease;
+  max-width: 60px;
+}
+
+.history-box .tabs{
+  padding: 60px 80px !important;
 }
 
 @media (min-width: 1100px){
   .container {
       max-width: 1094px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .top-box-title, .top-box-desc{
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    max-width: 80px;
+  }
+  .navbar .container{
+    align-items: end;
+  }
+
+  .mc-laren, .mc-laren-lights {
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    left: 0;
+    right: 0;
+  }
+
+  .mclaren-box{
+    height: 329px;
+  }
+
+  .mclaren-box {
+    left: 0px;
+    top: 52px;
+  }
+
+  .top-box .btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  h3{
+    font-size: 28px;
+  }
+
+  .exp-rows-text {
+    font-size: 24px;
+    padding: 0px 26px;
+  }
+
+  .program-box .row .col-12:first-child{
+    margin-bottom: 60px;
+  }
+
+  .confa-bx .text-bx .t2 {
+    font-size: 18px;
+  }
+
+  .confa-bx {
+    padding: 130px 50px 75px;
+  }
+  
+  .search-box .frame .t1 {
+    font-size: 18px;
+  }
+
+}
+
+.first-head-row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-head-row{
+  width: 100%;
+  padding-top: 30px;
+}
+
+.first-head-row .header-login-link{
+  margin-right: 20px;
+}
+
+.header-signup{
+  height: 50px;
+}
+
+.second-head-row .nav-links{
+  width: 100%;
+}
+
+.second-head-row .nav-links .nav-links-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px){
+  .search-box .list li {
+    margin: 0 10px -10px;
+    width: 200px;
+  }
+
+  .experience-box{
+    padding: 60px 30px 10px;
+  }
+
+  .exp-rows{
+    margin: 100px 0px;
+  }
+
+  .exp-rows-img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .exp-rows-text{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .history-box .tabs {
+    padding: 20px 20px !important;
+  }
+
+  .tabs .bx {
+    width: 58px;
+  }
+
+  .tabs:after {
+    height: 187px;
+    width: 102%;
+    left: -9px;
+    bottom: 15px;
+  }
+  .confa-bx {
+    padding: 60px 20px 30px;
+  }
+  .confa-bx .text-bx .t2 br{
+    display: none;
+  }
+  .mclaren-box {
+    height: 274px;
+  }
+  .slider-info {
+    padding: 30px 20px;
+  }
+  .slider-arrows {
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 510px){
+  .tabs .bx {
+    width: 35px;
+  }
+  .search-box .text-bx p br{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 460px){
+  .top-box-title span {
+    font-size: 50px;
+  }
+  .top-box-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .mclaren-box {
+    height: 234px;
+  }
+  .history-box .text p {
+  padding: 0px 10px;
+  }
+
+  .tabs li:nth-child(1) .bx {
+    height: 35px;
+    margin-top: 125px;
+  }
+  
+  .tabs li:nth-child(2) .bx {
+    height: 50px;
+    margin-top: 110px;
+  }
+  
+  .tabs li:nth-child(3) .bx {
+    height: 65px;
+    margin-top: 95px; 
+  }
+  
+  .tabs li:nth-child(4) .bx {
+    height: 80px;
+    margin-top: 80px;
+  }
+  
+  .tabs li:nth-child(5) .bx {
+    height: 95px;
+    margin-top: 65px;
+  }
+  
+  .tabs li:nth-child(6) .bx {
+    height: 110px;
+    margin-top: 50px;
+  }
+  
+  .tabs li:nth-child(7) .bx {
+    height: 125px;
+    margin-top: 35px;
+  }
+  .box-data {
+    padding-top: 22px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 22px;
+    text-align: left;
+  }
+  .confa-bx .text-bx .t1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .mclaren-box {
+    height: 200px;
+  }
+  .top-box-desc br{
+    display: none;
+  }
+  .exp-rows-img {
+    width: 75%;
   }
 }

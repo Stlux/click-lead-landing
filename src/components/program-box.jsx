@@ -4,7 +4,7 @@ export default function ProgramBox(){
         <div className="program-box">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-6 col-lg-6">
+                    <div className="col-12 col-md-12 col-lg-6">
                         <div class="frame">
                             <h3>Webmasters</h3>
                             <div class="bx">
@@ -38,7 +38,7 @@ export default function ProgramBox(){
                         </div>
                     </div>
                     
-                    <div className="col-12 col-md-6 col-lg-6">
+                    <div className="col-12 col-md-12 col-lg-6">
                         <div class="frame">
                             <h3>Advertisers</h3>
                             <div class="bx">
