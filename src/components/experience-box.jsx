@@ -5,12 +5,16 @@ import exp4 from "../images/exp4.png";
 import exp5 from "../images/exp5.png";
 import exp6 from "../images/exp6.png";
 
+import z7 from "../images/z7.png";
+
 export default function ExperienceBox(){
     return(
         <>
             <div className="experience d-none d-sm-none d-md-block d-lg-block d-xl-block">
                 <div className="container">
                     
+                    <img src={z7} alt="" className="uz uz7"/>
+
                     <div className="experience-box">
 
                         <div class="text">
@@ -23,8 +27,8 @@ export default function ExperienceBox(){
                         </div>
 
                         <div className="row exp-rows">
-                            <div className="col-12 col-md-6 col-lg-6 exp-rows-img"><img src={exp2} alt="experience 2"/></div>
-                            <div className="col-12 col-md-6 col-lg-6 exp-rows-text"><span>Segmented push notifications</span></div>
+                            <div className="col-12 col-md-6 col-lg-5 exp-rows-img"><img src={exp2} alt="experience 2"/></div>
+                            <div className="col-12 col-md-6 col-lg-7 exp-rows-text"><span>Segmented push notifications</span></div>
                         </div>
 
                         <div className="row exp-rows">
@@ -33,8 +37,8 @@ export default function ExperienceBox(){
                         </div>
 
                         <div className="row exp-rows">
-                            <div className="col-12 col-md-6 col-lg-6 exp-rows-img"><img src={exp4} alt="experience 4"/></div>
-                            <div className="col-12 col-md-6 col-lg-6 exp-rows-text"><span>Apps optimized for any source : FB / Google / in-app / TT</span></div>
+                            <div className="col-12 col-md-6 col-lg-5 exp-rows-img"><img src={exp4} alt="experience 4"/></div>
+                            <div className="col-12 col-md-6 col-lg-7 exp-rows-text"><span>Apps optimized for any source : FB / Google / in-app / TT</span></div>
                         </div>
 
                         <div className="row exp-rows">
@@ -43,8 +47,8 @@ export default function ExperienceBox(){
                         </div>
 
                         <div className="row exp-rows">
-                            <div className="col-12 col-md-6 col-lg-6 exp-rows-img"><img src={exp6} alt="experience 6"/></div>
-                            <div className="col-12 col-md-6 col-lg-6 exp-rows-text"><span>Bright enveloping ASOs</span></div>
+                            <div className="col-12 col-md-6 col-lg-5 exp-rows-img"><img src={exp6} alt="experience 6"/></div>
+                            <div className="col-12 col-md-6 col-lg-7 exp-rows-text"><span>Bright enveloping ASOs</span></div>
                         </div>
 
                     </div>
@@ -56,6 +60,8 @@ export default function ExperienceBox(){
             <div className="experience experience-mob d-block d-sm-block d-md-none d-lg-none d-xl-none">
                 <div className="container">
                     
+                    <img src={z7} alt="" className="uz uz7"/>
+
                     <div className="experience-box">
 
                         <div class="text">
