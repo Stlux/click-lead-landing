@@ -1,8 +1,45 @@
 import { useState } from "react";
-import playbtn from "../images/Play.svg";
+import z2 from "../images/z2.png";
+import z3 from "../images/z3.png";
+import z5 from "../images/z5.png";
+
 
 export default function HistoryBox(){
+
+    let dataToTransform = [
+        {id: 1, top: 50, left: -40, src: z5},
+        {id: 2, top: 700, left: -100, src: z3},
+        {id: 3, top: 400, left: 700, src: z2}
+    ]
+
+    let [coords, updateCords] = useState(dataToTransform);
     let [activeYearId, setAciveYearId] = useState(7);
+
+    let handleMouseOver = () => {
+        console.log(1);
+        const updatedBoxes = [...coords];
+        for(let i=0; i<coords.length; i++){
+            updatedBoxes[i] = {
+                ...updatedBoxes[i],
+                top: updatedBoxes[i].top + getRandomOffset(),
+                left: updatedBoxes[i].left + getRandomOffset(),
+            };
+
+            console.log(updatedBoxes[i].top + ' ' + updatedBoxes[i].left);
+        }
+
+        updateCords(updatedBoxes);
+    }
+    
+    const getRandomOffset = () => {    
+        return Math.random() > 0.5 ? 10 : -10;
+    };
+
+    let imgsToTransform = coords.map(val => {
+        return(
+            <img src={val.src} alt="" className={"uz uz" + val.id} key={val.id} style={{ top: `${val.top}px`, left: `${val.left}px` }}/>
+        );
+    });
 
     function moveToLeft(){
         if(activeYearId > 1){
@@ -47,7 +84,10 @@ export default function HistoryBox(){
 
     return(
         <>
-            <div class="history-box">
+            <div class="history-box" onMouseOver={() => handleMouseOver()}>
+
+                {imgsToTransform}
+
                 <div class="container">
                     <div class="wrap">
                         <div class="text">
