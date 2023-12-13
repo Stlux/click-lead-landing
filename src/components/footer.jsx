@@ -2,11 +2,16 @@ import sc1 from "../images/sc1.png";
 import sc2 from "../images/sc2.png";
 import sc3 from "../images/sc3.png";
 
+import z7 from "../images/z7.png";
+
 export default function Footer(){
     return(
         <>
             <div className="bottom-box">
                 <div className="container">
+
+                    <img src={z7} alt="" className="uz uz7"/>
+
                     <div className="bottom-bx">
                         <div className="text">
                             <h3>Subscribe to us <br /> in social networks</h3>

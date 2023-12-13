@@ -56,15 +56,15 @@ export default function Confabox(){
         <div className="confa-box">
             <div className="container">
                 <div className="confa-bx">
-                    <div class="text-bx">
-                        <div class="t1">We take part in conferences</div>
-                        <div class="t2">Our team always participates in the biggest affiliate <br /> marketing conferences</div>
+                    <div className="text-bx">
+                        <div className="t1">We take part in conferences</div>
+                        <div className="t2">Our team always participates in the biggest affiliate <br /> marketing conferences</div>
                     </div>
 
                     <div className="confa-slider">
                         
                         <div className="slider-arrows left-arrow" onClick={moveLeft}>
-                            <i class="bi bi-caret-left-fill"></i>
+                            <i className="bi bi-caret-left-fill"></i>
                         </div>
                         
                         <div className="slider-content">
@@ -74,7 +74,7 @@ export default function Confabox(){
                         </div>
                         
                         <div className="slider-arrows right-arrow" onClick={moveRight}>
-                            <i class="bi bi-caret-right-fill"></i>
+                            <i className="bi bi-caret-right-fill"></i>
                         </div>
 
                     </div>

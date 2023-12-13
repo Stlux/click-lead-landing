@@ -73,31 +73,31 @@ export default function HistoryBox(){
         if(activeYearId === val.id){
             selectedContent = [val.y, val.p];
             return(
-                <li className="active-bar" key={val.y}>{val.y}<div class={"bx bx-" + val.id}></div></li>
+                <li className="active-bar" key={val.y}>{val.y}<div className={"bx bx-" + val.id}></div></li>
             );    
         }
 
         return(
-            <li className="" key={val.y}>{val.y}<div class={"bx bx-" + val.id}></div></li>
+            <li className="" key={val.y}>{val.y}<div className={"bx bx-" + val.id}></div></li>
         );
     });
 
     return(
         <>
-            <div class="history-box" onMouseOver={() => handleMouseOver()}>
+            <div className="history-box" onMouseOver={() => handleMouseOver()}>
 
                 {imgsToTransform}
 
-                <div class="container">
-                    <div class="wrap">
-                        <div class="text">
+                <div className="container">
+                    <div className="wrap">
+                        <div className="text">
                             <h3>Affiliate Program</h3>
                             <p>We have been in the CPA market since 2016 (ex. Social Lead). Over the years in traffic arbitrage, we have learned how to make our own applications for Google Play, mastered social media traffic, and created our own next-generation CPA platform.</p>
                         </div>
                     </div>
 
-                    <div class="tab-bx">
-				        <ul class="tabs act">
+                    <div className="tab-bx">
+				        <ul className="tabs act">
                             {bars}
                         </ul>
                     </div>
@@ -105,8 +105,8 @@ export default function HistoryBox(){
                     <div className="box">
                         <div className="control-left" onClick={moveToLeft}></div>
                         <div className="box-data">
-                            <div class="t1">{selectedContent[0]}</div>
-                            <div class="t2" dangerouslySetInnerHTML={{__html:selectedContent[1]}}></div>
+                            <div className="t1">{selectedContent[0]}</div>
+                            <div className="t2" dangerouslySetInnerHTML={{__html:selectedContent[1]}}></div>
                         </div>
                         <div className="control-right" onClick={moveToRight}></div>
                     </div>

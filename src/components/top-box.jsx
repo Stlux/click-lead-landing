@@ -66,7 +66,7 @@ export default function TopBox(){
                             <h1 className="top-box-title"><span>Clicklead</span> <br />the best conditions <br /> on iGaming offers</h1>
                             
                             <p className="top-box-desc">Sign up and take part in a race with a  <br /><b>$1m+ prize pool.</b></p>
-                            <a className="btn" target="_blank" href="https://champions.clicklead.network/" class="btn">Start!</a>
+                            <a className="btn" target="_blank" href="https://champions.clicklead.network/">Start!</a>
                         </div>
                         <div className="col-12 col-md-12 col-lg-6" style={{overflow: "visible"}}>
                             <div className="mclaren-box">
@@ -88,7 +88,7 @@ export default function TopBox(){
                             </div>
 
                             <p className="top-box-desc">Sign up and take part in a race with a  <br /><b>$1m+ prize pool.</b></p>
-                            <a className="btn" target="_blank" href="https://champions.clicklead.network/" class="btn">Start!</a>
+                            <a className="btn" target="_blank" href="https://champions.clicklead.network/">Start!</a>
                         </div>
                     </div>
                 </div>

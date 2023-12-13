@@ -17,12 +17,12 @@ export default function ExperienceBox(){
 
                     <div className="experience-box">
 
-                        <div class="text">
+                        <div className="text">
                             <h3>We have extensive experience <br /> in app development</h3>
                             <p>We provide more than 20 Android <br /> and IOS apps free of charge</p>
                         </div>
 
-                        <div class="image">
+                        <div className="image">
                             <img src={exp1} alt="experience 1" />
                         </div>
 
@@ -64,12 +64,12 @@ export default function ExperienceBox(){
 
                     <div className="experience-box">
 
-                        <div class="text">
+                        <div className="text">
                             <h3>We have extensive experience <br /> in app development</h3>
                             <p>We provide more than 20 Android <br /> and IOS apps free of charge</p>
                         </div>
 
-                        <div class="image">
+                        <div className="image">
                             <img src={exp1} alt="experience 1" />
                         </div>
 

@@ -757,7 +757,7 @@ h3{
     display: none;
   }
 
-  .experience .uz{
+  .experience .uz, .bottom-box .uz{
     display: block;
   }
 
@@ -849,6 +849,20 @@ h3{
   align-items: center;
 }
 
+.bottom-box .container{
+  position: relative;
+}
+
+.bottom-box .container{
+  position: relative;
+}
+
+.bottom-box .container .uz7{
+  top: -38px;
+  left: 100px;
+  transform: rotate(45deg);
+}
+
 @media screen and (max-width: 767px){
   .search-box .list li {
     margin: 10px 10px -10px;
@@ -911,6 +925,13 @@ h3{
     font-size: 30px;
     position: relative;
     top: -10px;
+  }
+  .tooltip1 { 
+    top: 52px !important;
+  }
+  .tooltip2{
+    top: 62px !important;
+    left: 62px !important;
   }
 }
 
@@ -1028,6 +1049,51 @@ h3{
   .box-data {
     width: 210px;
   }
+}
+
+.tooltip{
+  opacity: 0;
+
+  background: #1C2125;
+  padding: 5px;
+  border-radius: 5px;
+  color: #FFF;
+
+  transition: .3s ease;
+
+  font-size: 12px;
+  width: 114px;
+  text-align: center;
+}
+
+.tooltip::before{
+  content: '';
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border: 6px solid #1C2125;
+  z-index: -1;
+}
+
+.buttons-group{
+  position:relative;
+}
+
+.tooltip1{
+  position: absolute;
+  top: 33px;
+  left: -35px;
+}
+
+.tooltip2{
+  position: absolute;
+  top: 62px;
+  left: 2px;
 }
 
 .top-box .container{
