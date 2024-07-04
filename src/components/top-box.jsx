@@ -23,7 +23,6 @@ export default function TopBox(){
     let [coords, updateCords] = useState(dataToTransform);
 
     let handleMouseOver = () => {
-        console.log(1);
         const updatedBoxes = [...coords];
         for(let i=0; i<coords.length; i++){
             updatedBoxes[i] = {
@@ -32,7 +31,6 @@ export default function TopBox(){
                 left: updatedBoxes[i].left + getRandomOffset(),
             };
 
-            console.log(updatedBoxes[i].top + ' ' + updatedBoxes[i].left);
         }
 
         updateCords(updatedBoxes);
